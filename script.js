@@ -51,4 +51,3 @@ noButton.addEventListener("mousemove", (e) => {
         }
     }
 });
-});
