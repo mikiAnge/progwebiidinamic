@@ -40,6 +40,15 @@ noButton.addEventListener("mousemove", (e) => {
             color += letters[Math.floor(Math.random() * 16)];
         }
         text.style.color = color;
-               
+        const maxMove = 600;
+        const xMove = (Math.random() - 0.5) * maxMove;
+        var yMove = (Math.random() - 0.5) * maxMove;
+        if (yMove >= 100 ) {
+            yMove = 100
+            noButton.style.transform = `translate(${xMove}px, ${yMove}px)`;
+        }else{
+            noButton.style.transform = `translate(${xMove}px, ${yMove}px)`;
+        }
     }
+});
 });
